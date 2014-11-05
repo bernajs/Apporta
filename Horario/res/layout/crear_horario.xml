@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/Llena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Llena tu Horario" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Llena"
+        android:layout_marginTop="17dp"
+        android:text="Nombre de Materia:" />
+
+    <EditText
+        android:id="@+id/Nombremat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Nombremat"
+        android:layout_below="@+id/Nombremat"
+        android:layout_marginTop="16dp"
+        android:text="Hora Inicio" />
+
+    <CheckBox
+        android:id="@+id/Lunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:text="Lunes" />
+
+    <EditText
+        android:id="@+id/Horailun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Lunes"
+        android:layout_alignBottom="@+id/Lunes"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Horaflun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Horailun"
+        android:layout_alignBottom="@+id/Horailun"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:ems="10" />
+
+    <CheckBox
+        android:id="@+id/Martes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Horailun"
+        android:layout_marginTop="14dp"
+        android:text="Martes" />
+
+    <EditText
+        android:id="@+id/Horaimar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Martes"
+        android:layout_alignBottom="@+id/Martes"
+        android:layout_alignLeft="@+id/Horailun"
+        android:layout_alignRight="@+id/Horailun"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Horafmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Horaimar"
+        android:layout_alignBottom="@+id/Horaimar"
+        android:layout_alignLeft="@+id/Horaflun"
+        android:layout_alignRight="@+id/Horaflun"
+        android:ems="10" />
+
+    <CheckBox
+        android:id="@+id/Miercoles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Horaimar"
+        android:layout_marginTop="16dp"
+        android:text="Miercoles" />
+
+    <EditText
+        android:id="@+id/Horaimie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Miercoles"
+        android:layout_alignBottom="@+id/Miercoles"
+        android:layout_alignLeft="@+id/Horaimar"
+        android:layout_alignRight="@+id/Horaimar"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Horafmie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Horaimie"
+        android:layout_alignBottom="@+id/Horaimie"
+        android:layout_alignLeft="@+id/Horafmar"
+        android:layout_alignRight="@+id/Horafmar"
+        android:ems="10" />
+
+    <CheckBox
+        android:id="@+id/Jueves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Horaimie"
+        android:layout_marginTop="16dp"
+        android:text="Jueves" />
+
+    <EditText
+        android:id="@+id/Horaijue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Jueves"
+        android:layout_alignBottom="@+id/Jueves"
+        android:layout_alignLeft="@+id/Horaimie"
+        android:layout_alignRight="@+id/Horaimie"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Horafjue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Horaijue"
+        android:layout_alignBottom="@+id/Horaijue"
+        android:layout_alignLeft="@+id/Horafmie"
+        android:layout_alignRight="@+id/Horafmie"
+        android:ems="10" />
+
+    <CheckBox
+        android:id="@+id/Viernes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Horaijue"
+        android:layout_marginTop="14dp"
+        android:text="Viernes" />
+
+    <EditText
+        android:id="@+id/Horaivie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Viernes"
+        android:layout_alignBottom="@+id/Viernes"
+        android:layout_alignLeft="@+id/Horaijue"
+        android:layout_alignRight="@+id/Horaijue"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/Horafvie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Horaivie"
+        android:layout_alignBottom="@+id/Horaivie"
+        android:layout_alignLeft="@+id/Horafjue"
+        android:layout_alignRight="@+id/Horafjue"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/Llena"
+        android:text="Hora Fin" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Btncrear"
+        android:layout_alignBottom="@+id/Btncrear"
+        android:layout_toRightOf="@+id/Btncrear"
+        android:onClick="Menu"
+        android:text="Listo" />
+
+    <Button
+        android:id="@+id/Btncrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Horaivie"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/Lunes"
+        android:onClick="AgregarMateria"
+        android:text="Agregar" />
+
+</RelativeLayout>
