@@ -17,5 +17,5 @@
 # class:
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
-#juasjuas
+#hola k ace
 #}
